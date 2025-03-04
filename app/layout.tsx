@@ -25,11 +25,14 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Simulate a short delay
+  await new Promise((resolve) => setTimeout(resolve, 200));
+
   return (
     <html lang="en">
       <body
