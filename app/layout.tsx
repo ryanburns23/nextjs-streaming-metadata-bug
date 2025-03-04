@@ -12,6 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata(): Promise<Metadata> {
   // Simulate a delay in generating metadata
   await new Promise((resolve) => setTimeout(resolve, 1500));

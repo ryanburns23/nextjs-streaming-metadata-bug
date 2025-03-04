@@ -16,6 +16,8 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   // Simulate a short delay
   await new Promise((resolve) => setTimeout(resolve, 200));
